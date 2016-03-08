@@ -1,0 +1,81 @@
+﻿Uživatelská dokumentace
+
+Úvod
+
+Aplikace Mistr Kostky asistuje se složením opravdové Rubikovy kostky s využitím počítačového vidění.  naviguje uživatele tak, aby kostku složil na dvacet tahů. Aplikace se snaží mít jednoduché a intuitivní ovládání, ale ve skutečnosti je zákeřná a nepředvídatelná. Vaše rozhodnutí nahlédnout do této příručky bylo tedy velmi prozíravé, protože vám pomůže jí lépe porozumět.
+Po spuštění aplikace postupně projdete třemi fázemi. V první fázi naskenujete kostku ze všech stran. Jakmile je kostka úspěšně nahrána, automaticky se přesunete do druhé fáze. V ní sledujete kostku v náhledu a řídíte se instrukcemi, jaké tahy udělat tak dlouho, dokud není kostka složena. Tím se okamžitě přesunete do třetí fáze, kdy aplikace spokojeně mručí a vy se můžete s pocitem zadostiučinění zaklonit v křesle a chvíli se kochat.
+Aplikace má jediný ovládací prvek - Veliké Červené Tlačítko. Je obecně známo, že mačkat taková tlačítka je špatný nápad. Stejně tak tomu je v našem případě. Nicméně se stiskem tlačítka můžete zachránit, pokud umělá inteligence v tomto programu zešílí. Vymažete jí tím pamět a obvykle ji to na chvíli uklidní. Nevýhoda je, že potom začínáte úplně od začátku a musíte kostku naskenovat znova.
+
+Nároky
+
+Tato aplikace vyžaduje dvoujádrový procesor, 300MB RAM a kameru.
+Pokud se vám bude zdát, že aplikace běží pomalu, je to tím, že taková prostě je. Buďte trpěliví, není to pro ni úplně snadné a snaží se, jak může. 
+
+Skenování
+
+Hned po spuštění aplikace nedočkavě vyhlíží cokoli, co aspoň vzdáleně připomíná nálepky na rubikově kostce. Jakmile nějakou skupinu nálepek začne považovat za část kostky, zkusí je do náhledu kamery nakreslit. A pokud to, co vidí, pasuje do její představy, jak vypadá skenovaná kostka, zkusí svou představu vylepšit a navíc ji využije k tomu, aby vám nakreslila co nejhezčí kostku. 
+To znamená, že můžete ukazovat kostku postupně z různých úhlů a můžete sledovat, jak toho o ní aplikace ví postupně čím dál tím víc. Kostku ukazujte podobně jako byste ji ukazovali člověku. Konkrétně se snažte co nejméně kostku zakrývat a hýbejte s ní plynule a pomalu, abyste aplikaci umožnili pochopit, jak spolu stěny souvisí. Tedy třeba vůbec není pěkné ukazovat stěny po jedné, protože potom je pochopitelně zmatená, která je která a jak je napojit. Zato když jí kostku budete ukazovat hezky tak, aby z ní viděla tři stěny najednou, bude mnohem radši, protože tak získá velice rychle dobrou prostorovou představu.
+Aplikace vás bude během skenování průběžně informovat o tom, kolik procent nálepek si už zapamatovala. Může se stát, že se toto číslo někdy o kousek sníží. To se může dít třeba když to, co aplikace vidí, neodpovídá jejímu očekávání a o nějakých nálepkách tím pádem znejistí.
+Pojďme se teď podívat na to, co nám během skenování aplikace kreslí. Snaží se nakreslit rubikovu kostku, která bude víceméně pasovat na obrázek v náhledu kamery. Čím jistější si je barvou nějaké nálepky, tím sytější barvou tuto nálepku nakreslí. Kolem nově objevených nálepek navíc nakreslí zelený obrys a kolem nálepek, u kterých znejistěla, nakreslí obrys červený. Bledě modrý obrys značí nálepku, které si všimla a odpovídá tomu, co tam čeká a tmavě modrá znamená, že danou nálepku sice nespatřila, ale domyslela si ji.
+Občas se může stát, že aplikaci úplně zmatete. Třeba když tajně vyměníte kostku za jinou nebo když uděláte bez dovolení nějaký tah. Občas se s tím dokáže nějak vyrovnat, ale může se stát, že zůstane zcela bezradná. Pak je čas na ránu z milosti. Veliké Červené Tlačítko.
+Pokud ale patříte mezi lidi, co jsou na stroje hodní,  pravděpodobně se těmto nepěkným situacím vyhnete. Zvlášť dobré kroky tímto směrem jsou používat čistou a nepoškozenou kostku a tmavý jednobarevný stůl. Obzvláště užitečná je černá pleť. Pokud to zrovna není váš případ, snažte se aspoň ruce do záběru strkat co nejméně.
+
+Navigace
+
+Jakmile si aplikace zapamatuje všechny nálepky, zamyslí se nad tím, jak kostku dostatečně rychle vyřešit - konečně něco, v čem umělá inteligence s přehledem překoná lidi. Pokaždé přijde na řešení do dvaceti tahů a lépe to v některých případech ani nejde. 
+Potom už stačí jenom v náhledu sledovat, na které stěně kostky se objeví nápověda, jak danou vrstvou kostiček otočit. Jednoduchá šipka znamená otočení vrstvy o 90°  a dvě šipky proti sobě značí otočení vrstvy o 180°. Podle instrukcí svou kostku upravte. Potom dejte aplikaci chvilku na to, aby se zorientovala. Dokud bude ukazovat místo šipky tečky, nechte ji, ať se v klidu ujistí, že jste tah udělali správně. 
+Pokud při skládání něco zmotáte, poznáte to podle toho, že vám aplikace bude kreslit něco jiného, než vidíte vy. Můžete toho využít k tomu, abyste svou chybu napravili. Pokud toho ale zkazíte moc, aplikace se na vás buď rozčílí a začne kostky kreslit hlava nehlava kam ji napadne, nebo se urazí a pro jistotu přestane kreslit úplně. V obou případech je rozumné honem zmáčknout Veliké Červené Tlačítko, začít znovu a už o tom raději nemluvit.
+
+Poděkování
+
+Díky vývojářům OpenCV za úžasné knihovny pro počítačové vidění, Larsovi Behnke za klastrovací algoritmus a především Herbertu Kociembovi za algoritmus na vyřešení kostky za dvacet tahů.
+Dále bych chtěl poděkovat všem, co mě podpořili při vývoji, zejména společnostem Milka, Orion a Ahold Basic. Také děkuji všem, co mi důvěřovali, že se mi tento projekt podaří.
+
+
+						***
+
+Programátorská dokumentace
+
+Mistr Kostky je mobilní aplikace napsaná v Javě pro Android. 
+následuje popis některých zajímavých tříd:
+
+MainActivity
+
+Jediná aktivita (androidí okno) mého programu. Stará se o uživatelské rozhraní a spouštění algoritmů. Ve funkci onPreviewFrame dostane snímek z náhledu kamery určený k zobrazení uživateli a má možnost jej před tím upravit. Pod touto funkcí jsou spuštěny všechny mé algoritmy. Protože zpracování jednoho snímku od převzetí z kamery po vykreslení kostky trvá v řádu stovek milisekund, zobrazují se snímky se zpožděním a neplynule.
+
+Visor
+
+Zjištění, jak vypadá kostka, probíhá na několika úrovních. První, nejpomalejší, je detekce nálepek z aktuálního snímku náhledu kamery se sníženým rozlišením a převedeným do HSV. 
+Detekce se provádí pro každou barvu zvlášť. Thresholdingem se vytvoří binární obrázek indikujícící, které pixely mají danou barvu. Uzavřením a otevřením se odstraní příliš malé oblasti a zacelí díry. Ve výsledném obrázku najdeme kontury reprezentované jako mnohoúhelníky. Vybereme jenom ty, jejichž okolí v původním obrázku obsahuje hodně bílých pixelů (předpokládáme, že kostka má bílé tělo). 
+Pro vybranou konturu najdeme její konvexní obal. Na něm provedeme zaostření rohů - tedy odstranění velmi krátkých hran a prodloužení sousedních hran tak, aby vzniknul podobný mnohoúhelník s menším počtem hran. Výsledný mnohoúhelník zkusíme aproximovat čtyřúhelníkem. Pokud je čtyřúhelník ve vymezeném rozsahu velikostí a pokud mají protější strany malou odchylku, prohlásíme jej za nálepku.
+Další fáze je poskládání nálepek do kostky. Nálepky se rozdělí do klastrů tak, aby nálepky s podobnou velikostí, tvarem a orientací byly spolu. Vybereme největší klastr. V něm zkusíme najít množinu nálepek, které jsou vzájemně rozmístěny tak, že by na kostce mohly být na jedné stěně. Použijeme několik nejlepších možností umístění a orientací stěny podle toho, kolik nálepek do nich pasuje. Stěnu reprezentujeme jako rovnoběžník.
+Když je dán rovnoběžník, může být stěnou dvou různých krychlí v ortografické projekci. Vyzkoušíme obě možnosti. Náhled kamery ale více odpovídá tříbodé perspektivní projekci než té ortografické, proto ji použijeme místo ní. Daný čtyřúhelník mírně upravíme tak, aby odpovídal tříbodé projekci. Při tom zvolíme dva vhodné perspektivní body. K tomu využijeme odhad vzdálenosti kostky od kamery na základě velikosti rovnoběžníka. Třetí perspektivní bod je určen jednoznačně a s jeho pomocí určímě ostatní vrcholy krychle.
+Máme tedy několik teorií, jak by mohla vypadat kostka. Pro každou z nich zjistíme, kolik nálepek jak dobře pasuje do kostky. Podle toho je seřadíme a případně vyházíme špatné.
+O tyto první dvě fáze se stará třída Visor. Ten dostane zmenšený snímek z náhledu kamery a odevzdá seznam kostek s částečně vyplněnými nálepkami. 
+
+
+
+Analyser
+
+Na vyšší úrovni pracuje třída Analyser. Ten pracuje ve dvou režimech: rozpoznávání, kdy se snaží zjistit, jak kostka vypadá a napovídání, kdy už kostku zná a ukazuje uživateli, jak ji složit.
+
+Rozpoznávání
+
+Analyser se stará o částečně vyplněné kostky, které dostane ze třídy Visor a zkouší je navzájem spojovat. Buduje si seznam hypotéz, ve kterém skladuje částečně vyplněné kostky. Tento seznam udržuje krátký a usiluje o to, aby v něm co nejdříve byla popsána kostka odpovídající té reálné.
+Když nějaká právě spatřená  kostka jde očividně spojit s nějakou kostkou mezi hypotézami s dostatečným překryvem, přidá mezi hypotézy novou kostku vzniklou jejich spojením. Navíc mezi hypotézy přidá všechny spatřené kostky. Zachová z hypotéz ale jenom několik nejlepších, ostatní vyřadí.
+Všechny hypotézy musí dávat smysl - Je neměnná vzájemná pozice středů a pevné množiny rohových a hranových kostiček. Když vznikne hypotéza, která tato pravidla nesplňuje, je destruktivně upravena tak, aby je splňovala.
+Analyser navíc zkusí vybrat z výstupu Visora kostku, která pasuje nejlépe na některou z jeho hypotéz. Podle dané hypotézy této kostce doplní chybějící nálepky a zobrazí ji uživatelovi.
+
+Napovídání
+
+Když přejdeme z fáze rozpoznávání k napovídání, použitím třídy Thinker vyplníme k naší hypotéze textové řešení.
+Napovídání funguje v mnohém podobně jako rozpoznávání. Opět se snažíme napasovat kostky, které dostaneme od Visora, na nějaké hypotézy. Tyto hypotézy jsou ale tentokrát kompletní a vždy právě dvě: Zaprvé to, jak si myslíme, že kostka právě vypadá a zadruhé to, jak by měla vypadat po správném tahu. 
+Pokud je nejlepší shoda mezi nějakou viděnou kostkou a aktuální hypotézou, vykreslíme ji vylepšenou podle hypotézy a zobrazíme šipku značící, jaký tah má uživatel provést. 
+Pokud pasuje lépe na hypotézu předpovídající kostku po provedení tahu, ještě se v několika dalších snímcích ujistíme, že tah byl opravdu proveden a pokud si tím jsme jisti, hypotézy aktualizujeme a aktuální hypotézou se stává ta, která byla dosud budoucí. Ta má stejné řešení, akorát zkrácené o první krok.
+
+
+Použité knihovny třetích stran:
+- standardní knihovny pro Android
+- knihovna OpenCV na strojové vidění (http://opencv.org)
+- knihovna na hierarchické klastrování (http://github.com/lbehnke/hierarchical-clustering-java)
+- knihovna na krátké řešení rubikovy kostky (kociemba.org/cube.htm)

@@ -1,0 +1,30 @@
+﻿29. června
+
+sepsání stavu, ve kterém jsem:
+v pythonu je experimentální skript, který dokáže do jisté míry rozpoznat nálepky na kostce a aproximovat je na čtyřúhelníky. Neumí z nich zatím udělat kostku.
+V androidu je aplikace, která vezme do ruky snímek náhledu kamery a hned ho zase vrátí.
+
+Co zbývá implementovat:
+---------------------------------------
+
+Další krok je nalezené nálepky seskupit do klastrů, kde každý klastr bude jedna
+stěna kostky. Klastrovací algoritmus (UPGMA?) potřebuje matici vzdáleností. Ta
+se v pythonu dosud počítala na základě prostorové vzdálenosti a podobnosti tvaru. To fungovalo dobře jenom pro projekce, které zachovávaly rovnoběžnost. V papírech mám nakreslený sofistikovanější algoritmus, který pracuje s obecnou projekcí.
+
+Vybere se nějaká vhodná úroveň klastrování (nejvýš tři velké klastry, v každém
+nejvýš devět nálepek, nálepky dostatečně podobné).
+
+V klastru je podle tvaru rovnoběžníků poznat, jaká lineární transformace
+popisuje natočení stěny. Napasujeme podle ní nálepky do mřížky. Někdy to může
+být nejednoznačné, ale je dostatečně málo možností. V pythonu zatím předpokládám, že transformace zachovává rovnoběžnost.
+
+Když je určena jedna stěna, je tím jednoznačně určen i zbytek kostky.  Když
+víme dvě stěny, využijeme redundance k zpřesnění (pomocí metody nejmenších
+čtverců nebo podobně). Výstup je nejen zjištěné nakreslení kostky, ale i míra
+jistoty.
+
+Pro každou stěnu uděláme vyvážení bílé a kontrastu tak, aby nám vyskočily
+očekávané barvy.
+
+Spojitá detekce: Kvůli plynulosti z uživatelského hlediska je potřeba mít algoritmus, který za několik milisekund upraví předchozí natočení kostky. Nápady: pracovat jenom s největší stěnou, předpokládat malé změny...
+
